@@ -1,10 +1,10 @@
 import React from 'react';
-
+import './App.css';
 const Item = ({ name, image }) => {
   return (
     <div className="item">
-      <img src={image} alt={name} />
-      <h2>{name}</h2>
+      <img src={require(`./images/${image}`)} alt={name} />
+      <p className='item-name'>{name}</p>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const Navbar = () => {
   const [MainAddress,setMainAddress] = useState('Krishnapuram Colony');
   const [Address,setAddress] = useState('1-234, ABC, TEKBA, Andhra Pradesh');
+  const [email,setEmail] = useState('abc@gmail.com');
   
   return (
     <nav>
@@ -23,7 +24,9 @@ const Navbar = () => {
         </div>
         </div>
         <div className='nav-account'>
-          J
+          <div>
+          {email[0]}
+          </div>
         </div>
       </div>
     </nav>
